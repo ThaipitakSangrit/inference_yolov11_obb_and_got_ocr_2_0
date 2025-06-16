@@ -1,0 +1,33 @@
+cd .\models
+git clone https://huggingface.co/stepfun-ai/GOT-OCR2_0
+เปลี่ยนชื่อโฟลเดอร์โมเดลที่โหลดมาด้วย เป็น GOT_OCR2_0 [เครื่องหมาย - ไม่ควรใช้]
+
+^^^^^^^^^^^^
+ถ้า clone โมเดลเองต้องไปเพิ่ม prompt ในไฟล์  -> ".\models\GOT_OCR2_0\modeling_GOT.py" ในฟังก์ชั่น chat() ตรง ocr_type
+
+-----------------
+
+# install GOT OCR 2_0
+
+pip install torch==2.0.1 torchvision==0.15.2 transformers==4.37.2 tiktoken==0.6.0 verovio==4.3.1 accelerate==0.28.0
+pip uninstall torch torchvision torchaudio
+pip install torch==2.0.0+cu117 torchvision==0.15.1+cu117 -f https://download.pytorch.org/whl/cu117/torch_stable.html
+
+-----------------
+
+# install REQUEST file
+
+pip install opencv-python
+
+-----------------
+
+# install HOST file
+
+pip install fastapi
+pip install uvicorn
+
+-----------------
+
+# install YOLOv11
+
+pip install ultralytics
