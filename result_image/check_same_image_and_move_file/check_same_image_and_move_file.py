@@ -1,9 +1,9 @@
 import os
 import shutil
 
-full_image_path = r'D:\work\python\ocr_utl3_test_infer_yolov11_obb_and_use_got_ocr_2_0\result_image\check_same_image_and_move_file\original'
-cropped_image_path = r'D:\work\python\ocr_utl3_test_infer_yolov11_obb_and_use_got_ocr_2_0\result_image'
-output_path = r'D:\work\python\ocr_utl3_test_infer_yolov11_obb_and_use_got_ocr_2_0\result_image\check_same_image_and_move_file\image_same'
+full_image_path = r'D:\work\python\result_image\check_same_image_and_move_file\original'
+cropped_image_path = r'D:\work\python\result_image'
+output_path = r'D:\work\python\result_image\check_same_image_and_move_file\image_same'
 
 cropped_files = os.listdir(cropped_image_path)
 cropped_base_names = set()
